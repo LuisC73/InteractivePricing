@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+  <link rel="stylesheet" href="./src/stylesheets/css/style.css">
+ 
+</head>
+<body>
+
+  <main class="main">
+    <section class="pricing">
+      <div class="pricing__head">
+        <h1 class="pricing__h1">
+          Simple, traffic-based pricing
+        </h1>
+        <p class="pricing__sub">
+          Sign-up for our 30-day trial. No credit card required. 
+        </p>
+      </div>
+      <div class="pricing__container">
+        <div class="pricing__top">
+          <h3 class="pricing__h3"><span id="pageviews">100k</span> Pageviews</h3>
+          <p class="pricing__p"><span id="value" class="pricing__p pricing__p--value">$16.00</span> <span class="pricing__p pricing__p--month">/month</span></p>
+        </div>
+        <div class="pricing__progress">
+          <input type="range" min="1" max="5" step="1" value="3" class="pricing__bar">
+        </div>
+        <div class="pricing__div">
+          <p class="pricing__p">Monthly Billing</p>
+          <div class="pricing__switch">
+            <input type="checkbox" class="pricing__check">
+            <span class="pricing__slider"></span>
+          </div>   
+          <p class="pricing__p">Yearly Billing <span class="pricing__discount">25% <span>discount</span> </span></p>
+        </div>
+        <hr class="pricing__line">
+       <div class="pricing__bottom">
+        <div class="pricing__texts">
+          <p class="pricing__p pricing__p--margin"><img src="./src/images/icon-check.svg" class="pricing__icon"> Unlimited websites</p>
+          <p class="pricing__p pricing__p--margin"><img src="./src/images/icon-check.svg" class="pricing__icon"> 100% data ownership</p>
+          <p class="pricing__p pricing__p--margin"><img src="./src/images/icon-check.svg" class="pricing__icon"> Email reports</p>
+        </div>
+        <input type="button" class="pricing__button" value="Start my trial">
+       </div>   
+      </div>
+    </section>
+  </main>
+
+
+
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  </div>
+</body>
+</html>

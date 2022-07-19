@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;600;700;800&display=swap');
+
+$cyan-soft: hsl(174, 77%, 80%);
+$cyan-strong: hsl(174, 86%, 45%);
+$red-grayish: hsl(14, 92%, 95%);
+$red-light: hsl(15, 100%, 70%);
+$white: hsl(0, 0%, 100%);
+$font: 'Manrope', sans-serif;
+
+$blues:(
+    "pale" : hsl(226, 100%, 87%),
+    "veryPale" : hsl(230, 100%, 99%),
+    "toggle" : hsl(223, 50%, 87%),
+    "text" :hsl(225, 20%, 60%),
+    "dark" : hsl(227, 35%, 25%),
+    "grayish" :  hsl(224, 65%, 95%)
+);

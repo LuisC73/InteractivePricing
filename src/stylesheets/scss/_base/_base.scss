@@ -1,0 +1,8 @@
+@use '../_layout/vars' as vars;
+
+body{
+    font-family: vars.$font;
+    overflow-x: hidden;
+    font-size: 15px;
+    background: url('../../images/bg-pattern.svg') no-repeat;
+}

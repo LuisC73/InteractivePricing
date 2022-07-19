@@ -1,0 +1,18 @@
+@use '../_layout/vars' as vars;
+@use '../_layout/mixins' as mixin;
+
+.pricing{
+    &__p--value{
+        color: map-get(vars.$blues,"dark");
+        font-size: 2.3rem;
+        font-weight: 800;
+    }
+
+    &__p--month{
+        vertical-align: super;
+    }
+
+    &__p--margin:not(:first-child){
+        margin-top: 1rem;
+    }
+}

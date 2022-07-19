@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;600;700;800&display=swap");
+body {
+  font-family: "Manrope", sans-serif;
+  overflow-x: hidden;
+  font-size: 15px;
+  background: url("../../images/bg-pattern.svg") no-repeat;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+a {
+  display: block;
+}
+
+p a {
+  display: inline;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+::selection {
+  background-color: hsl(174deg, 86%, 45%);
+  color: #fff;
+}
+
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: auto;
+  background-color: transparent;
+  display: block;
+  color: inherit;
+}
+
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  background: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: hsl(174deg, 77%, 80%);
+  border-radius: 10px;
+}
+
+.pricing {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.pricing__head {
+  background: url("../../images/pattern-circles.svg") no-repeat center;
+  text-align: center;
+}
+.pricing__h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 5.5rem 0 0.3rem 0;
+  color: hsl(227deg, 35%, 25%);
+}
+@media screen and (max-width: 768px) {
+  .pricing__h1 {
+    font-size: 1.2rem;
+  }
+}
+.pricing__sub {
+  font-size: 0.9rem;
+  margin-bottom: 5rem;
+  color: hsl(225deg, 20%, 60%);
+}
+@media screen and (max-width: 768px) {
+  .pricing__sub {
+    font-size: 0.8rem;
+    padding: 0 6.5rem;
+  }
+}
+.pricing__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: hsl(0deg, 0%, 100%);
+  width: 40%;
+  height: min-content;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width: 768px) {
+  .pricing__container {
+    width: 85%;
+  }
+}
+.pricing__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 1.2rem;
+}
+@media screen and (max-width: 768px) {
+  .pricing__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+.pricing__h3 {
+  font-size: 0.85rem;
+  color: hsl(225deg, 20%, 60%);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+.pricing__p {
+  color: hsl(225deg, 20%, 60%);
+  font-size: 0.9rem;
+}
+.pricing__progress {
+  width: 100%;
+  color: hsl(224deg, 65%, 95%);
+}
+.pricing__bar {
+  width: 100%;
+  background-color: hsl(174deg, 77%, 80%);
+  background: linear-gradient(to right, hsl(174deg, 77%, 80%) 0%, hsl(174deg, 77%, 80%) 50%, hsl(224deg, 65%, 95%) 0%, hsl(224deg, 65%, 95%) 100%);
+  appearance: none;
+  height: 0.5rem;
+  border-radius: 0.4rem;
+  outline: none;
+}
+.pricing__bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 2rem;
+  height: 2rem;
+  background: url("../../images/icon-slider.svg") no-repeat 50% 50%;
+  background-color: hsl(174deg, 86%, 45%);
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 1.1rem;
+  box-shadow: 0px 5px 20px hsl(174deg, 86%, 45%);
+}
+.pricing__div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin: 3rem 2.5rem 3rem 0;
+}
+.pricing__div > .pricing__p {
+  margin-left: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .pricing__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 3rem 0;
+  }
+  .pricing__div > .pricing__p {
+    font-size: 0.8rem;
+    margin-left: 0;
+  }
+}
+.pricing__discount {
+  margin-left: 0.6rem;
+  background-color: hsl(14deg, 92%, 95%);
+  color: hsl(15deg, 100%, 70%);
+  font-size: 0.7rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 1rem;
+  font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+  .pricing__discount {
+    margin-left: 0rem;
+  }
+  .pricing__discount > span {
+    display: none;
+  }
+}
+.pricing__switch {
+  margin: 0 0.3rem 0 1.2rem;
+  position: relative;
+  height: 1.3rem;
+  width: 2.7rem;
+  border-radius: 1rem;
+  background-color: hsl(223deg, 50%, 87%);
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .pricing__switch {
+    margin: 0 0.4rem;
+  }
+}
+.pricing__check {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+.pricing__check:checked + .pricing__slider {
+  transform: translateX(-1rem);
+}
+.pricing__slider {
+  width: 1rem;
+  height: 1.02rem;
+  border-radius: 50%;
+  background-color: hsl(0deg, 0%, 100%);
+  position: absolute;
+  top: 0.15rem;
+  left: 0.15rem;
+  transition: 0.5s;
+}
+.pricing__line {
+  width: 115%;
+  height: 0.1rem;
+  background-color: hsl(223deg, 50%, 87%);
+}
+.pricing__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  .pricing__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.pricing__button {
+  padding: 0.8rem 3rem;
+  border-radius: 3rem;
+  background-color: hsl(227deg, 35%, 25%);
+  color: hsl(226deg, 100%, 87%);
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+@media screen and (max-width: 768px) {
+  .pricing__button {
+    margin-top: 2rem;
+  }
+}
+.pricing__icon {
+  width: 0.7rem;
+  display: inline;
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+
+.pricing__p--value {
+  color: hsl(227deg, 35%, 25%);
+  font-size: 2.3rem;
+  font-weight: 800;
+}
+.pricing__p--month {
+  vertical-align: super;
+}
+.pricing__p--margin:not(:first-child) {
+  margin-top: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
