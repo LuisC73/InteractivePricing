@@ -1,12 +1,9 @@
 
-
-
-
 <h1 align="center">👋 Frontend Mentor - Interactive pricing component 🚀</h1>
 
 <div align="center">
   <h3>
-    <a href="https://luisc73.github.io/SunnySide/">
+    <a href="https://luisc73.github.io/InteractivePricing/">
       Ingresar
     </a>
   </h3>
@@ -27,7 +24,7 @@
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/LuisC73/SunnySide.git
+$ git clone https://github.com/LuisC73/InteractivePricing.git
 
 ```
 

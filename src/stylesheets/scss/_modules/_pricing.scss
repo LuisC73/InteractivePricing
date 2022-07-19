@@ -66,6 +66,10 @@
         font-weight: 800;
         text-transform: uppercase;
         letter-spacing: .1rem;
+
+        @include mixin.mediaMovil(){
+            margin-bottom: 1rem;
+        }
     }
 
     &__p{
@@ -80,12 +84,9 @@
 
     &__bar{
         width: 100%;
-        background-color: vars.$cyan-soft;
         background: linear-gradient(to right, 
-        vars.$cyan-soft 0%,
         vars.$cyan-soft 50%, 
-        map-get(vars.$blues,"grayish") 0%,
-        map-get(vars.$blues,"grayish") 100%);
+        map-get(vars.$blues,"grayish") 0%);
         appearance: none;
         height: .5rem;
         border-radius: .4rem;
@@ -101,6 +102,10 @@
             cursor: pointer;
             padding: 1.1rem;
             box-shadow: 0px 5px 20px vars.$cyan-strong;
+        }
+
+        &:active{
+            background-color: vars.$white;
         }
     }
 
@@ -133,6 +138,8 @@
         border-radius: 1rem;
         font-weight: 600;
 
+    
+
         @include mixin.mediaMovil(){
             margin-left: 0rem;
             & > span{
@@ -150,6 +157,10 @@
         background-color: map-get(vars.$blues,"toggle");
         cursor: pointer;
 
+        &:hover{
+            background-color: vars.$cyan-soft;
+        }
+
         @include mixin.mediaMovil(){
             margin: 0 .4rem;
         }
@@ -160,10 +171,9 @@
         left: 0;
         top: 0;
         opacity: 0;
-        
-        &:checked + .pricing__slider{
-            transform: translateX(-1rem);
-        }
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
     }
 
     &__slider{
@@ -177,10 +187,14 @@
         transition: .5s;
     }
 
+    &__check:checked + &__slider{
+        transform: translateX(25px);
+    }
+
     &__line{
-        width: 115%;
+        width: 113%;
         height: .1rem;
-        background-color: map-get(vars.$blues,"toggle");
+        background-color: rgba(0,0,0,.1)
     }
 
     &__bottom{
@@ -201,6 +215,12 @@
         color: map-get(vars.$blues,"pale");
         font-size: .8rem;
         font-weight: 800;
+        transition: .3s;
+        cursor: pointer;
+
+        &:hover{
+            color: map-get(vars.$blues,"veryPale");
+        }
 
         @include mixin.mediaMovil(){
             margin-top: 2rem;

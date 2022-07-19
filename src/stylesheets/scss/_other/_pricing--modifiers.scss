@@ -15,4 +15,18 @@
     &__p--margin:not(:first-child){
         margin-top: 1rem;
     }
+    
+    &__p--hide{
+        @include mixin.mediaMovil(){
+            display: none;
+        }
+    }
+
+    &__p--show{
+        display: none;
+        @include mixin.mediaMovil(){
+            display: block;
+            margin-top: 2rem;
+        }
+    }
 }

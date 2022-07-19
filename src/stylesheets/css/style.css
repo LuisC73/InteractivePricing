@@ -180,6 +180,11 @@ body::-webkit-scrollbar-thumb {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
 }
+@media screen and (max-width: 768px) {
+  .pricing__h3 {
+    margin-bottom: 1rem;
+  }
+}
 .pricing__p {
   color: hsl(225deg, 20%, 60%);
   font-size: 0.9rem;
@@ -190,8 +195,7 @@ body::-webkit-scrollbar-thumb {
 }
 .pricing__bar {
   width: 100%;
-  background-color: hsl(174deg, 77%, 80%);
-  background: linear-gradient(to right, hsl(174deg, 77%, 80%) 0%, hsl(174deg, 77%, 80%) 50%, hsl(224deg, 65%, 95%) 0%, hsl(224deg, 65%, 95%) 100%);
+  background: linear-gradient(to right, hsl(174deg, 77%, 80%) 50%, hsl(224deg, 65%, 95%) 0%);
   appearance: none;
   height: 0.5rem;
   border-radius: 0.4rem;
@@ -207,6 +211,9 @@ body::-webkit-scrollbar-thumb {
   cursor: pointer;
   padding: 1.1rem;
   box-shadow: 0px 5px 20px hsl(174deg, 86%, 45%);
+}
+.pricing__bar:active {
+  background-color: hsl(0deg, 0%, 100%);
 }
 .pricing__div {
   display: flex;
@@ -258,6 +265,9 @@ body::-webkit-scrollbar-thumb {
   background-color: hsl(223deg, 50%, 87%);
   cursor: pointer;
 }
+.pricing__switch:hover {
+  background-color: hsl(174deg, 77%, 80%);
+}
 @media screen and (max-width: 768px) {
   .pricing__switch {
     margin: 0 0.4rem;
@@ -268,9 +278,9 @@ body::-webkit-scrollbar-thumb {
   left: 0;
   top: 0;
   opacity: 0;
-}
-.pricing__check:checked + .pricing__slider {
-  transform: translateX(-1rem);
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
 .pricing__slider {
   width: 1rem;
@@ -282,10 +292,13 @@ body::-webkit-scrollbar-thumb {
   left: 0.15rem;
   transition: 0.5s;
 }
+.pricing__check:checked + .pricing__slider {
+  transform: translateX(25px);
+}
 .pricing__line {
-  width: 115%;
+  width: 113%;
   height: 0.1rem;
-  background-color: hsl(223deg, 50%, 87%);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 .pricing__bottom {
   display: flex;
@@ -311,6 +324,11 @@ body::-webkit-scrollbar-thumb {
   color: hsl(226deg, 100%, 87%);
   font-size: 0.8rem;
   font-weight: 800;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.pricing__button:hover {
+  color: hsl(230deg, 100%, 99%);
 }
 @media screen and (max-width: 768px) {
   .pricing__button {
@@ -334,6 +352,20 @@ body::-webkit-scrollbar-thumb {
 }
 .pricing__p--margin:not(:first-child) {
   margin-top: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .pricing__p--hide {
+    display: none;
+  }
+}
+.pricing__p--show {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .pricing__p--show {
+    display: block;
+    margin-top: 2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
